@@ -32,15 +32,6 @@ namespace ProductsApp.Controllers
             }
             return Ok(product);
         }
-        public IHttpActionResult RemoveProduct(int id)
-        {
-            var product = products.FirstOrDefault((p) => p.Id == id);
-            
-            if(product==null)
-            {
-                return NotFound();
-            }
-            return Ok(product);
-        }
+       
     }
 }
